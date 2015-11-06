@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_box-empty</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="ic_box-empty" sketch:type="MSLayerGroup" transform="translate(1.000000, 1.000000)" stroke="#000000" stroke-width="0.25" fill="#000000">
+            <path d="M9.83333333,10 L0.166666667,10 C0.0746666667,10 0,9.92533333 0,9.83333333 L0,0.166666667 C0,0.0745 0.0746666667,0 0.166666667,0 L9.83333333,0 C9.92533333,0 10,0.0745 10,0.166666667 L10,9.83333333 C10,9.92533333 9.92533333,10 9.83333333,10 L9.83333333,10 Z M0.333333333,9.66666667 L9.66666667,9.66666667 L9.66666667,0.333333333 L0.333333333,0.333333333 L0.333333333,9.66666667 Z" id="Fill-2" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>

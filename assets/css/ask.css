@@ -1,0 +1,63 @@
+/* ==========================================================================
+   Ask
+   ========================================================================== */
+
+.ask .logo {
+  width: 150px;
+  margin: 40px auto 40px;
+  display: block;
+}
+.input-group .form-control {
+  height: 45px;
+  padding: 15px;
+  border-radius: 4px 0 0 4px;
+  background: #f9f9f9;
+  border: 1px solid #eee !important; 
+  border-right: none !important;
+}
+.input-group .form-control:hover {
+  border: 1px solid #ddd !important;
+  border-right: none !important;
+}
+.input-group-btn {
+  font-size: inherit;
+}
+.input-group-btn .btn {
+  border-radius: 0 4px 4px 0;
+  height: 45px;
+  color: #fff;
+  background: #d32c38;
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZDMyYzM4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UyNTgzMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(-45deg,  #d32c38 0%, #e25831 100%);
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#d32c38), color-stop(100%,#e25831));
+  background: -webkit-linear-gradient(-45deg,  #d32c38 0%,#e25831 100%);
+  background: -o-linear-gradient(-45deg,  #d32c38 0%,#e25831 100%);
+  background: -ms-linear-gradient(-45deg,  #d32c38 0%,#e25831 100%);
+  background: linear-gradient(135deg,  #d32c38 0%,#e25831 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d32c38', endColorstr='#e25831',GradientType=1 );
+}
+.bookmark {
+  margin-top: 30px;
+}
+.bookmark a {
+  color: #666;
+}
+.bookmark img {
+  border-radius: 4px;
+  overflow: hidden;
+}
+.bookmark p {
+  height: 36px;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #666;
+  transition: all .25s ease-in-out;
+  -moz-transition: all .25s ease-in-out;
+  -webkit-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+}
+.bookmark a:focus p,
+.bookmark a:active p {
+  color: #d42e38
+}

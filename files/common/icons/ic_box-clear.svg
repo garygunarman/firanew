@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-2 -2 10 10"
+	 enable-background="new -2 -2 10 10" xml:space="preserve">
+<title>ic_box-clear</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1" sketch:type="MSPage">
+	<g id="ic_box-clear" transform="translate(-2.000000, -2.000000)" sketch:type="MSLayerGroup">
+		<path id="Fill-2" sketch:type="MSShapeGroup" stroke="#000000" stroke-width="0.25" d="M6.9,7.2c0,0-0.1,0-0.1,0L3,3.3
+			C2.9,3.3,2.9,3.2,3,3.1C3,3,3.2,3,3.2,3.1L7,6.9C7.1,7,7.1,7.1,7,7.1C7,7.2,6.9,7.2,6.9,7.2"/>
+		<path id="Fill-3" sketch:type="MSShapeGroup" stroke="#000000" stroke-width="0.25" d="M3.1,7.2c0,0-0.1,0-0.1,0
+			C2.9,7.1,2.9,7,3,6.9l3.8-3.8C6.8,3,6.9,3,7,3.1c0.1,0.1,0.1,0.2,0,0.2L3.2,7.1C3.2,7.2,3.1,7.2,3.1,7.2"/>
+	</g>
+</g>
+</svg>
