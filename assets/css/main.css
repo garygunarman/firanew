@@ -537,6 +537,7 @@ p.body.body-grey {
   padding: 20px;
   z-index: 10;
   width: 100%;
+  margin-top: 75px;
 }
 @media (min-width: 320px) and (max-width: 479px) {
   #hero .image img {
@@ -576,6 +577,7 @@ p.body.body-grey {
   #hero {
     height: 570px;
     padding: 30px;
+    margin-top: 85px;
   }
   #hero .text {
     padding-top: 150px;
@@ -1235,6 +1237,7 @@ header .news-line.block-center {
 .jumbotron {
   margin-bottom: 0;
   padding: 0;
+  margin-top: 75px;
 }
 
 .jumbotron.jumbo-blog {

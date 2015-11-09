@@ -1,5 +1,4 @@
-<div class="navbar navbar-static-top" role="navigation">
-<!-- <div class="navbar navbar-default navbar-fixed-top" role="navigation"> -->
+<div class="navbar navbar-fixed-top" role="navigation">
 
   <div class="navbar-header">
     <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target=".navbar-data">
