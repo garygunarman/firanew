@@ -1305,6 +1305,10 @@ header .news-line.block-center {
     background-size: 100%;
   }
 
+  .jumbotron.jumbo-about {
+    background-size: 100%;
+  }
+
 }
 
 
