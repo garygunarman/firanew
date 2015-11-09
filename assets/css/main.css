@@ -1141,9 +1141,14 @@ p.body.body-grey {
   -webkit-transition: all .25s ease-in-out;
   -o-transition: all .25s ease-in-out;
   /*padding: 0 15px;*/
+  height: 350px;
 }
 .news-box header {
   padding: 5px 0;
+}
+
+.news-box img {
+  height: 220px;
 }
 
 .news-box header h1,
@@ -1282,10 +1287,10 @@ header .news-line.block-center {
 
 .jumbotron.jumbo-career {
   background: #BC2157 url("../../assets/img/about/bg_careers.jpg") no-repeat;
-  background-position: 50% 0;
+  background-position: 50% 20%;
   background-attachment: fixed;
   background-size: 100%;
-  height: 350px;
+  height: 250px;
   padding-top: 85px;
 }
 

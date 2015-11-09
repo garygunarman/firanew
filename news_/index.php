@@ -79,7 +79,7 @@ $news = $get->get_listing_news('1','news_date DESC',$first_record,$qpp);
           <?php
           foreach($news as $news_){
 		  ?>
-			<div class="col-sm-6 col-md-4 col-lg-">
+			<div class="col-sm-6 col-md-4 col-lg-4 clearfix">
 	            <a href="<?php echo $prefix;?>news-read/<?=$news_->news_id;?>" class="news-box">
 	              <div class="img">
 	                <img class="img-responsive" src="<?php echo $prefix.$news_->news_image;?>" width="100%">
@@ -89,10 +89,10 @@ $news = $get->get_listing_news('1','news_date DESC',$first_record,$qpp);
 	                <p class="datestamp"><?php echo date('l, F j Y', strtotime($news_->news_date));?></p>
 	                <div class="news-line"></div>
 	              </header>
-	              <section>
+	              <!-- <section>
 	                <p><?=$news_->news_excerpt;?></p>
 	              </section>
-	              <p class="news-link">Read more</p>
+	              <p class="news-link">Read more</p> -->
 	            </a><!--.news-box-->
 	          </div><!--.col-->
 		  <?php
