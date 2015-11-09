@@ -69,7 +69,7 @@ $news = $get->get_listing_news('1','news_date DESC',$first_record,$qpp);
       <?php include($prefix."static/navbar.php"); ?>
 
 
-      <div class="jumbotron jumbo-blog">
+      <div class="jumbotron jumbo-blog" id="section1">
         <h1 class="title animated fadeInUp">News</h1>
         <!-- <p class="subtitle">Lorem Ipsum Dolor Sit Amet.</p> -->
       </div>

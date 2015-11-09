@@ -17,7 +17,7 @@
 
       <?php include($prefix."static/navbar.php"); ?>
 
-      <div class="jumbotron jumbo-about">
+      <div class="jumbotron jumbo-about" id="section4">
         <h1 class="title animated fadeInUp">About Fira</h1>
 
         <!-- <p class="subtitle">Lorem Ipsum Dolor Sit Amet.</p> -->

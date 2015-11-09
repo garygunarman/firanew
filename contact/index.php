@@ -17,7 +17,7 @@
 
       <?php include($prefix."static/navbar.php"); ?>
 
-      <div class="jumbotron jumbo-contact">
+      <div class="jumbotron jumbo-contact" id="section3">
         <h1 class="title animated fadeInUp">Contact Us</h1>
         <!-- <p class="subtitle">Lorem Ipsum Dolor Sit Amet.</p> -->
       </div>

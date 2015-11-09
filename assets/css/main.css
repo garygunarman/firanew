@@ -1248,6 +1248,7 @@ header .news-line.block-center {
   background-attachment: fixed;
   height: 250px;
   padding-top: 85px;
+  background-size: cover 100%;
 }
 
 .jumbotron.jumbo-about-last {
@@ -1282,9 +1283,9 @@ header .news-line.block-center {
 .jumbotron.jumbo-career {
   background: #BC2157 url("../../assets/img/about/bg_careers.jpg") no-repeat;
   background-position: 50% 0;
-  /*background-attachment: fixed;*/
-  background-size: cover;
-  height: 250px;
+  background-attachment: fixed;
+  background-size: 100%;
+  height: 350px;
   padding-top: 85px;
 }
 
@@ -1663,6 +1664,8 @@ body.news {
 }
 .social li {
   border-bottom: 1px solid rgba(255,255,255,.25);
+  border-right: none;
+
 }
 .social li:last-child {
   border-right: none;

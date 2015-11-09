@@ -56,7 +56,7 @@ $careers = $_get->get_job('1','career_id DESC');
 
       <?php include($prefix."static/navbar.php"); ?>
 
-      <div class="jumbotron jumbo-career">
+      <div class="jumbotron jumbo-career" id="section2">
          <h1 class="title animated fadeInUp">Career</h1>
          <!-- <p class="subtitle">Lorem Ipsum Dolor Sit Amet.</p> -->
 
