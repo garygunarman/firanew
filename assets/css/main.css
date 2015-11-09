@@ -231,6 +231,7 @@ body {
 .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
   margin-left: -15px; /* originally 15 */
   margin-right: -15px; /* originally 15 */
+  overflow-x: hidden;
 }
 
 @media (min-width: 1200px) {
@@ -1253,7 +1254,7 @@ header .news-line.block-center {
   background-attachment: fixed;
   height: 250px;
   padding-top: 85px;
-  background-size: cover 100%;
+  background-size: cover;
 }
 
 .jumbotron.jumbo-about-last {
@@ -1280,7 +1281,7 @@ header .news-line.block-center {
   background: #BC2157 url("../../assets/img/about/bg_contact.jpg") no-repeat;
   background-position: 50% 0;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
   height: 250px;
   padding-top: 85px;
 }
@@ -1289,9 +1290,21 @@ header .news-line.block-center {
   background: #BC2157 url("../../assets/img/about/bg_careers.jpg") no-repeat;
   background-position: 50% 20%;
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
   height: 250px;
   padding-top: 85px;
+}
+
+@media (min-width: 992px) {
+
+  .jumbotron.jumbo-career {
+    background-size: 100%;
+  }
+
+  .jumbotron.jumbo-contact {
+    background-size: 100%;
+  }
+
 }
 
 
