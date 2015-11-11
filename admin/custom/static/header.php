@@ -31,11 +31,13 @@
 
       <li><a href="<?php echo BASE_URL.'career';?>">Career</a></li>
 
+	  <li><a href="<?php echo BASE_URL.'contact';?>">Contact</a></li>
+
       <ul class="nav navbar-nav navbar-right" role="navigation">
         <li id="id-nav-settings"><a data-toggle="dropdown" href="#" style="font-size: 18px; padding: 14px 6px 14px 10px"><span class="glyphicon glyphicon-cog"></span></a>
           <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-            <!--<li><a href="<?php echo BASE_URL;?>general">General</a></li>
-            <li><a href="<?php echo BASE_URL;?>server-info">Server Information</a></li>-->
+            <li><a href="<?php echo BASE_URL;?>general">General</a></li>
+            <!--<li><a href="<?php echo BASE_URL;?>server-info">Server Information</a></li>-->
             <li><a href="<?php echo BASE_URL;?>accounts">Account</a></li>
             <!--<li><a href="<?php echo BASE_URL;?>notifications">Notifications</a></li>
             <li><a href="<?php echo BASE_URL;?>mailchimp">Mailchimp</a></li>

@@ -1,61 +1,11 @@
-<?php
-include('../admin/static/_header.php');
-
-class BLOG_GET extends HeaderDatabase{
-	
-	function count_news($post_search, $post_sort_by, $query_per_page){
-      $sql    = "SELECT * FROM tbl_news AS news INNER JOIN tbl_news_category AS cat ON news.news_category = cat.category_id 
-                 WHERE $post_search
-                 ORDER BY $post_sort_by
-			    ";
-      $query  = $this->conn->query($sql);
-
-	  $full_order['total_query'] = $query->num_rows;
-	  $full_order['total_page']  = ceil($full_order['total_query'] / $query_per_page);
-
-	  return $full_order;
-   }
-
-
-   function get_listing_news($post_search, $post_sort_by, $post_first_record, $post_qpp){
-      $sql    = "SELECT * FROM tbl_news AS news INNER JOIN tbl_news_category AS cat ON news.news_category = cat.category_id 
-                 WHERE $post_search
-                 ORDER BY $post_sort_by
-			     LIMIT $post_first_record, $post_qpp
-			    ";
-      $query = $this->conn->query($sql);
-      $row   = array();
-
-	  while($result = $query->fetch_object()){
-	     array_push($row, $result);
-	  }
-
-      return $row;
-   }
-}
-
-
-$pg = $_REQUEST['pg'];
-if ($pg==''){$pg=1;}
-
-$qpp = 12;
-$first_record = ($pg-1)*$qpp;
-
-$get = new BLOG_GET();
-$count = $get->count_news('1','news_date DESC',$qpp);
-$total_query = $count['total_query'];
-$total_page = $count['total_page'];
-
-$news = $get->get_listing_news('1','news_date DESC',$first_record,$qpp);
-?>
-
+<?php $prefix="../";
+include($prefix.'admin/static/_header.php');?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
   <head>
-    <?php $prefix="../";?>
     <?php include($prefix."static/head.php"); ?>
     <?php //include($prefix."static/analytics.php"); ?>
   </head>
@@ -63,6 +13,57 @@ $news = $get->get_listing_news('1','news_date DESC',$first_record,$qpp);
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
+
+	<?php
+	//include('../admin/static/_header.php');
+
+	class BLOG_GET extends HeaderDatabase{
+
+		function count_news($post_search, $post_sort_by, $query_per_page){
+	      $sql    = "SELECT * FROM tbl_news AS news INNER JOIN tbl_news_category AS cat ON news.news_category = cat.category_id 
+	                 WHERE $post_search
+	                 ORDER BY $post_sort_by
+				    ";
+	      $query  = $this->conn->query($sql);
+
+		  $full_order['total_query'] = $query->num_rows;
+		  $full_order['total_page']  = ceil($full_order['total_query'] / $query_per_page);
+
+		  return $full_order;
+	   }
+
+
+	   function get_listing_news($post_search, $post_sort_by, $post_first_record, $post_qpp){
+	      $sql    = "SELECT * FROM tbl_news AS news INNER JOIN tbl_news_category AS cat ON news.news_category = cat.category_id 
+	                 WHERE $post_search
+	                 ORDER BY $post_sort_by
+				     LIMIT $post_first_record, $post_qpp
+				    ";
+	      $query = $this->conn->query($sql);
+	      $row   = array();
+
+		  while($result = $query->fetch_object()){
+		     array_push($row, $result);
+		  }
+
+	      return $row;
+	   }
+	}
+
+
+	$pg = $_REQUEST['pg'];
+	if ($pg==''){$pg=1;}
+
+	$qpp = 12;
+	$first_record = ($pg-1)*$qpp;
+
+	$get = new BLOG_GET();
+	$count = $get->count_news('1','news_date DESC',$qpp);
+	$total_query = $count['total_query'];
+	$total_page = $count['total_page'];
+
+	$news = $get->get_listing_news('1','news_date DESC',$first_record,$qpp);
+	?>
 
     <div id="main">
 

@@ -136,7 +136,7 @@ include('control.php');
           </ul>
         </div>
       </div><!--.box-->
-      <div class="box row">
+      <div class="box row hidden">
         <div class="desc col-xs-3">
           <h3>Company Details</h3>
           <p>Your company details.</p>
@@ -214,7 +214,7 @@ include('control.php');
           </ul>
         </div>
       </div><!--.box-->
-      <div class="box row">
+      <div class="box row hidden">
         <div class="desc col-xs-3">
           <h3>Other Details</h3>
           <p>Details such as currency. </p>
@@ -230,7 +230,7 @@ include('control.php');
           </ul>
         </div>
       </div><!--.box-->
-      <div class="box row">
+      <div class="box row hidden">
         <div class="desc col-xs-3">
           <h3>Mailgun Details</h3>
           <p>Email service provider credentials. </p>

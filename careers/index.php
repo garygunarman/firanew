@@ -1,49 +1,12 @@
-<?php
-include('../admin/static/_header.php');
-
-class CAREER_GET extends HeaderDatabase{
-	
-	function get_job($src_param, $post_order_by){
-
-
-	   $sql    = "SELECT * FROM tbl_career AS job LEFT JOIN tbl_career_category AS dept ON job.category = dept.category_id
-	              WHERE $src_param
-				  ORDER BY $post_order_by
-				 ";
-	      $query = $this->conn->query($sql);
-	      $row   = array();
-
-		  while($result = $query->fetch_object()){
-		     array_push($row, $result);
-		  }
-
-	      return $row;
-	}
-}
-/*
-if ($_REQUEST['pq']!=''){
-	$prefix == '../';
-}
-
-$pg = $_REQUEST['pg'];
-if ($pg==''){$pg=1;}
-
-$qpp = 1;
-$first_record = ($pg-1)*$qpp;
-*/
-$_get = new CAREER_GET();
-
-
-$careers = $_get->get_job('1','career_id DESC');
-?>
-
+<?php $prefix="../";
+include($prefix.'admin/static/_header.php');?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
   <head>
-    <?php $prefix="../";?>
+    
     <?php include($prefix."static/head.php"); ?>
     <?php //include($prefix."static/analytics.php"); ?>
   </head>
@@ -51,7 +14,43 @@ $careers = $_get->get_job('1','career_id DESC');
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
+	<?php
+	class CAREER_GET extends HeaderDatabase{
 
+		function get_job($src_param, $post_order_by){
+
+
+		   $sql    = "SELECT * FROM tbl_career AS job LEFT JOIN tbl_career_category AS dept ON job.category = dept.category_id
+		              WHERE $src_param
+					  ORDER BY $post_order_by
+					 ";
+		      $query = $this->conn->query($sql);
+		      $row   = array();
+
+			  while($result = $query->fetch_object()){
+			     array_push($row, $result);
+			  }
+
+		      return $row;
+		}
+	}
+	/*
+	if ($_REQUEST['pq']!=''){
+		$prefix == '../';
+	}
+
+	$pg = $_REQUEST['pg'];
+	if ($pg==''){$pg=1;}
+
+	$qpp = 1;
+	$first_record = ($pg-1)*$qpp;
+	*/
+	$_get = new CAREER_GET();
+
+
+	$careers = $_get->get_job('1','career_id DESC');
+	?>
+	
     <div id="main">
 
       <?php include($prefix."static/navbar.php"); ?>

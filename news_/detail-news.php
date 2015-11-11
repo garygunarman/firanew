@@ -1,28 +1,5 @@
-<?php
-include('../admin/static/_header.php');
-
-class BLOGDETAIL_GET extends HeaderDatabase{
-	
-	function get_news_detail($news_id){
-	     
-	         $sql    = "SELECT * FROM `tbl_news` AS `news_` INNER JOIN `tbl_news_category` AS `cat_` ON `news_`.news_category = `cat_`.category_id WHERE `news_`.news_id = '$news_id'";
-
-		  $query  = $this->conn->query($sql);
-		  $result = $query->fetch_object();
-
-		  return $result;
-	   }
-
-}
-
-
-$news_id = $_REQUEST['id'];
-
-$get = new BLOGDETAIL_GET();
-$detail = $get->get_news_detail($news_id);
-
-
-?>
+<?php $prefix="../";
+include($prefix.'admin/static/_header.php');?>
 
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
@@ -37,7 +14,6 @@ $detail = $get->get_news_detail($news_id);
   <meta name="description" content="<?=$detail->meta_description;?>">
   <meta name="keywords" content="<?=$detail->meta_keywords;?>">
   <head>
-    <?php $prefix="../";?>
     <?php include($prefix."static/head.php"); ?>
     <?php //include($prefix."static/analytics.php"); ?>
   </head>
@@ -46,6 +22,32 @@ $detail = $get->get_news_detail($news_id);
         <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->
 
+	<?php
+	//include('../admin/static/_header.php');
+
+	class BLOGDETAIL_GET extends HeaderDatabase{
+
+		function get_news_detail($news_id){
+
+		         $sql    = "SELECT * FROM `tbl_news` AS `news_` INNER JOIN `tbl_news_category` AS `cat_` ON `news_`.news_category = `cat_`.category_id WHERE `news_`.news_id = '$news_id'";
+
+			  $query  = $this->conn->query($sql);
+			  $result = $query->fetch_object();
+
+			  return $result;
+		   }
+
+	}
+
+
+	$news_id = $_REQUEST['id'];
+
+	$get = new BLOGDETAIL_GET();
+	$detail = $get->get_news_detail($news_id);
+
+
+	?>
+	
     <div id="main">
 
       <?php include($prefix."static/navbar.php"); ?>

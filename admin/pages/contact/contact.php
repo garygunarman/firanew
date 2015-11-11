@@ -46,7 +46,7 @@ include("control.php");
                 <input type="text" class="form-control" value="<?php echo $get_info->email_display;?>" name="email_display" id="id-email">
               </div>
             </li>
-            <li class="form-group row" id="id-row-phone">
+            <li class="form-group row hidden" id="id-row-phone">
               <label class="col-xs-3 control-label">Telephone</label>
               <div class="col-xs-9">
                 <input type="text" class="form-control" value="<?php echo $get_info->telephone;?>" name="telephone" id="id-phone">
