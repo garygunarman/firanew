@@ -122,7 +122,7 @@ include('static/_header.php');
 			    safe_redirect('login');
 				
 			 }else{
-			    if(ACT === 'account/_login/signin'){
+			    if(ACT === 'account/_login/signin'  || ACT === 'account/_forgot/forgot' || ACT === 'account/_recover/recover'){
 				   include(str_replace ('http','',$_REQUEST['act']).".php");
 				   
 				}else{

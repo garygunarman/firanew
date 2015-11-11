@@ -1,9 +1,10 @@
-    <meta charset="utf-8">
+	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>FIRA</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="<?php echo $_global_general->website_title;?>">
+    <meta name="description" content="<?php echo META_DESCRIPTION;?>">
+    <meta name="keywords" content="<?php echo META_KEYWORDS;?>">
     <link href="<?php echo $prefix;?>assets/css/bootstrap.css" rel="stylesheet">
     <link href="<?php echo $prefix;?>assets/css/animate.css" rel="stylesheet">
     <link href="<?php echo $prefix;?>assets/css/font-awesome.css" rel="stylesheet">

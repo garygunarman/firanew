@@ -10,7 +10,6 @@ include('update.php');
 include('control.php');
 ?>
 
-
 <?php
 show_alert($_SESSION['alert']['type'], $_SESSION['alert']['msg']);
 ?>
